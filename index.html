@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>VinFast</title>
+    <link rel="icon" type= "icon favicon" href="img/footer_logo.png">
     <link rel="stylesheet" href="css/header_footer.css">
     <script src="js/header_footer.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/slidercss.css">
 </head>
 <body>
 <header>
@@ -19,8 +22,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
-
+                    <li><a href="index.html">Trang chủ</a></li>
                     <ul>
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropbtn">Tin tức</a>
@@ -45,7 +47,7 @@
                     </ul>
 
                     <li><a href="#">Sự kiện</a></li>
-                    <li><a href="#">Đặt mua xe</a></li>
+                    <li><a href="./page/shop.html">Đặt mua xe</a></li>
 
                     <li style="float:right"><a class="active" href="#">Đăng nhập</a></li>
                     <li style="float:right"><a class="active" href="#">Đăng ký</a></li>
@@ -58,7 +60,35 @@
     </div>
 </header>
 
-<!--Code-->
+<!--Slider-->
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/SLIDE/1.jpg" style="width:100%">
+        <div class="text">Buổi offline “Nhập môn xe điện VinFast” tại Đà Nẵng</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/SLIDE/2.jpg" style="width:100%">
+        <div class="text">Taxi điện VinFast có gì khác biệt so với taxi chạy xăng</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/SLIDE/3.jpg" style="width:100%">
+        <div class="text">VinFast triển khai hệ thống Xưởng dịch vụ không ngày nghỉ</div>
+    </div>
+</div>
+<br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!--Chart-->
 
 <footer>
     <div class="container">
@@ -100,5 +130,29 @@
         <!--Kết Thúc Nội Dung Liên Hệ-->
     </div>
 </footer>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            console.log('item: ', slides[i]);
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+
+</script>
+
 </body>
 </html>

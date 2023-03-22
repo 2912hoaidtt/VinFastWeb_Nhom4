@@ -248,10 +248,11 @@ footer .container .noi-dung{
     padding: 10px;
 }
 .footer-logo{
-    width: 10%;
+    width: 25%;
 }
 .footer-logo img{
-    width: 70%;
+    height: 60%;
+    width: 54%;
 }
 footer  .container .noi-dung.about{
     width:35%;
@@ -291,7 +292,7 @@ footer .container .noi-dung.about p{
 }
 .links{
     position: relative;
-    width: 25%;
+    width: 15%;
 }
 .links ul li{
     list-style: none;

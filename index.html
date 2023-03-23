@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>VinFast</title>
-    <link rel="icon" type= "icon favicon" href="img/footer_logo.png">
+    <link rel="icon" type="icon favicon" href="img/footer_logo.png">
     <link rel="stylesheet" href="css/header_footer.css">
-    <script src="js/header_footer.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/slidercss.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
 <header>
@@ -63,7 +64,6 @@
 <!--Slider-->
 
 <div class="slideshow-container">
-
     <div class="mySlides fade">
         <div class="numbertext">1 / 5</div>
         <img src="img/SLIDE/1.jpg" style="width:100%">
@@ -89,7 +89,131 @@
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 <!--Chart-->
+<div id="chartContainer" class="chart-container">
+</div>
+<div class="hot-news-container">
+    <h2>Tin Tức</h2>
+    <div class="vin3s-post vin3s-modle-grid">
+        <a class="elementor-post__thumbnail__link"
+           href="./page/news-detail.html">
+            <div class="elementor-post__thumbnail">
+                <img
+                        src="https://cmu-cdn.vinfast.vn/2023/03/3ca52293-gsm_be-group_2-768x512.jpg"
+                        class="attachment-medium_large size-medium_large wp-stateless-item"
+                        alt="" loading="lazy" data-image-size="medium_large"
+                        data-stateless-media-bucket="prod-vinfast-vn-cmu-data"
+                        data-stateless-media-name="2023/03/3ca52293-gsm_be-group_2.jpg">
+            </div>
+        </a>
+        <div class="grid-details">
+            <h3 class="elementor-post__title">
+                <a href="./page/news-detail.html">
+                    Công ty GSM đầu tư vào Be Group, hỗ trợ tài xế chuyển đổi sang xe điện </a>
+            </h3>
+            <div class="elementor-post__excerpt">
+                <p>Hà Nội, ngày 21/3/2023 – Công ty Cổ phần Di chuyển Xanh và Thông minh (GSM) và Be Group ...</p>
+            </div>
+            <div class="entry-meta entry-meta-block vin3s-entry-meta">
+                <div class="meta-wrap ">
+                    <div class="post-author">
+                        <a href="./page/news-detail.html">
+                            <img alt=""
+                                 src="https://vinfast.vn/wp-content/uploads/avatars/314/ff507c5b-63105cdfed1a9-bpthumb.jpg"
+                                 srcset="https://vinfast.vn/wp-content/uploads/avatars/314/ff507c5b-63105cdfed1a9-bpthumb.jpg 2x"
+                                 class="avatar avatar-80 photo" height="80" width="80" loading="lazy">
+                            <span class="author-name">Admin</span>
+                        </a>
+                    </div>
+                    <span class="post-date">
+                        <a href="https://vinfast.vn/cong-ty-gsm-dau-tu-vao-be-group-ho-tro-tai-xe-chuyen-doi-sang-xe-dien/">
+                            2 ngày, 7 giờ trước
+                        </a>
+                    </span>
+                    <span class="post-comments">
+                        <a href="https://vinfast.vn/cong-ty-gsm-dau-tu-vao-be-group-ho-tro-tai-xe-chuyen-doi-sang-xe-dien/#comments"
+                           class="flex align-items-center bb-comments-wrap">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M1.41325 1.68282C1.68781 1.38413 2.04836 1.21875 2.42577 1.21875H13.7092C14.0866 1.21875 14.4472 1.38413 14.7218 1.68282C14.9957 1.98082 15.135 2.35677 15.135 2.73465V11.6618C15.135 12.0397 14.9957 12.4157 14.7218 12.7137C14.4476 13.012 14.0876 13.1773 13.7108 13.1777L13.7092 13.1777L5.24705 13.2325L3.3215 14.9607C3.09469 15.2002 2.85702 15.2789 2.63332 15.3397L2.58177 15.3537H2.52835C2.51835 15.3537 2.50772 15.3538 2.49653 15.3539C2.32775 15.3546 2.02884 15.356 1.77545 15.1971C1.6476 15.1403 1.54079 15.0545 1.45852 14.9731C1.36203 14.8777 1.2785 14.7678 1.21281 14.6606C1.06231 14.415 1 14.1145 1 13.8378V2.73465C1 2.35677 1.13932 1.98082 1.41325 1.68282ZM2.42577 2.01875C2.29029 2.01875 2.13796 2.07655 2.00222 2.22422C1.86584 2.37258 1.8 2.55458 1.8 2.73465V13.8378C1.8 14.0075 1.84027 14.1534 1.89492 14.2426C1.93181 14.3028 1.9765 14.3603 2.02106 14.4043C2.04297 14.426 2.06223 14.4418 2.07772 14.4526C2.09202 14.4625 2.10053 14.4661 2.10053 14.4661L2.15345 14.4853L2.19901 14.5184C2.2058 14.5233 2.22651 14.5355 2.28444 14.5439C2.33583 14.5514 2.39423 14.5532 2.4738 14.5536C2.61817 14.5117 2.67764 14.4793 2.74675 14.4041L2.75975 14.3899L4.93849 12.4345L13.7066 12.3778L13.7092 12.3777C13.8447 12.3777 13.997 12.3199 14.1328 12.1723C14.2692 12.0239 14.335 11.8419 14.335 11.6618V2.73465C14.335 2.55458 14.2692 2.37258 14.1328 2.22422C13.997 2.07655 13.8447 2.01875 13.7092 2.01875H2.42577Z"
+                                  fill="#3C3C3C"></path>
+                            <path d="M5.15 7.61875C5.56421 7.61875 5.9 7.28296 5.9 6.86875C5.9 6.45454 5.56421 6.11875 5.15 6.11875C4.73579 6.11875 4.4 6.45454 4.4 6.86875C4.4 7.28296 4.73579 7.61875 5.15 7.61875Z"
+                                  fill="#3C3C3C"></path>
+                            <path d="M8.15 7.61875C8.56421 7.61875 8.9 7.28296 8.9 6.86875C8.9 6.45454 8.56421 6.11875 8.15 6.11875C7.73579 6.11875 7.4 6.45454 7.4 6.86875C7.4 7.28296 7.73579 7.61875 8.15 7.61875Z"
+                                  fill="#3C3C3C"></path>
+                            <path d="M11.15 7.61875C11.5642 7.61875 11.9 7.28296 11.9 6.86875C11.9 6.45454 11.5642 6.11875 11.15 6.11875C10.7358 6.11875 10.4 6.45454 10.4 6.86875C10.4 7.28296 10.7358 7.61875 11.15 7.61875Z"
+                                  fill="#3C3C3C"></path>
+                            </svg>
 
+                            <span class="comments-count">11 <span class="bb-comment-text">Bình luận</span></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vin3s-post vin3s-modle-grid">
+        <a class="elementor-post__thumbnail__link"
+           href="./page/news-detail.html">
+            <div class="elementor-post__thumbnail"><img
+                    src="https://cmu-cdn.vinfast.vn/2023/03/2d998db9-1920x1080-01-01-nhapmonxedienhcm-1536x864.jpg"
+                    class="attachment-medium_large size-medium_large wp-stateless-item"
+                    alt="" loading="lazy" data-image-size="medium_large"
+                    data-stateless-media-bucket="prod-vinfast-vn-cmu-data"
+                    data-stateless-media-name="2023/03/3ca52293-gsm_be-group_2.jpg">
+            </div>
+        </a>
+        <div class="grid-details">
+            <h3 class="elementor-post__title">
+                <a href="./page/news-detail.html">
+                    Công ty GSM đầu tư vào Be Group, hỗ trợ tài xế chuyển đổi sang xe điện dsdsds </a>
+            </h3>
+            <div class="elementor-post__excerpt">
+                <p>Hà Nội, ngày 21/3/2023 – Công ty Cổ phần Di chuyển Xanh và Thông minh (GSM) và Be Group ...</p>
+            </div>
+            <div class="entry-meta entry-meta-block vin3s-entry-meta">
+                <div class="meta-wrap ">
+                    <div class="post-author">
+                        <a href="https://vinfast.vn/members/vfcw-content01/">
+                            <img alt=""
+                                 src="https://vinfast.vn/wp-content/uploads/avatars/314/ff507c5b-63105cdfed1a9-bpthumb.jpg"
+                                 srcset="https://vinfast.vn/wp-content/uploads/avatars/314/ff507c5b-63105cdfed1a9-bpthumb.jpg 2x"
+                                 class="avatar avatar-80 photo" height="80" width="80" loading="lazy">
+                            <span class="author-name">Hoai</span>
+                        </a>
+                    </div>
+                    <span class="post-date">
+                        <a href="https://vinfast.vn/cong-ty-gsm-dau-tu-vao-be-group-ho-tro-tai-xe-chuyen-doi-sang-xe-dien/">
+                            4 ngày, 1 giờ trước
+                        </a>
+                    </span>
+                    <span class="post-comments">
+                        <a href="https://vinfast.vn/cong-ty-gsm-dau-tu-vao-be-group-ho-tro-tai-xe-chuyen-doi-sang-xe-dien/#comments"
+                           class="flex align-items-center bb-comments-wrap">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M1.41325 1.68282C1.68781 1.38413 2.04836 1.21875 2.42577 1.21875H13.7092C14.0866 1.21875 14.4472 1.38413 14.7218 1.68282C14.9957 1.98082 15.135 2.35677 15.135 2.73465V11.6618C15.135 12.0397 14.9957 12.4157 14.7218 12.7137C14.4476 13.012 14.0876 13.1773 13.7108 13.1777L13.7092 13.1777L5.24705 13.2325L3.3215 14.9607C3.09469 15.2002 2.85702 15.2789 2.63332 15.3397L2.58177 15.3537H2.52835C2.51835 15.3537 2.50772 15.3538 2.49653 15.3539C2.32775 15.3546 2.02884 15.356 1.77545 15.1971C1.6476 15.1403 1.54079 15.0545 1.45852 14.9731C1.36203 14.8777 1.2785 14.7678 1.21281 14.6606C1.06231 14.415 1 14.1145 1 13.8378V2.73465C1 2.35677 1.13932 1.98082 1.41325 1.68282ZM2.42577 2.01875C2.29029 2.01875 2.13796 2.07655 2.00222 2.22422C1.86584 2.37258 1.8 2.55458 1.8 2.73465V13.8378C1.8 14.0075 1.84027 14.1534 1.89492 14.2426C1.93181 14.3028 1.9765 14.3603 2.02106 14.4043C2.04297 14.426 2.06223 14.4418 2.07772 14.4526C2.09202 14.4625 2.10053 14.4661 2.10053 14.4661L2.15345 14.4853L2.19901 14.5184C2.2058 14.5233 2.22651 14.5355 2.28444 14.5439C2.33583 14.5514 2.39423 14.5532 2.4738 14.5536C2.61817 14.5117 2.67764 14.4793 2.74675 14.4041L2.75975 14.3899L4.93849 12.4345L13.7066 12.3778L13.7092 12.3777C13.8447 12.3777 13.997 12.3199 14.1328 12.1723C14.2692 12.0239 14.335 11.8419 14.335 11.6618V2.73465C14.335 2.55458 14.2692 2.37258 14.1328 2.22422C13.997 2.07655 13.8447 2.01875 13.7092 2.01875H2.42577Z"
+                                  fill="#3C3C3C"></path>
+                            <path d="M5.15 7.61875C5.56421 7.61875 5.9 7.28296 5.9 6.86875C5.9 6.45454 5.56421 6.11875 5.15 6.11875C4.73579 6.11875 4.4 6.45454 4.4 6.86875C4.4 7.28296 4.73579 7.61875 5.15 7.61875Z"
+                                  fill="#3C3C3C"></path>
+                            <path d="M8.15 7.61875C8.56421 7.61875 8.9 7.28296 8.9 6.86875C8.9 6.45454 8.56421 6.11875 8.15 6.11875C7.73579 6.11875 7.4 6.45454 7.4 6.86875C7.4 7.28296 7.73579 7.61875 8.15 7.61875Z"
+                                  fill="#3C3C3C"></path>
+                            <path d="M11.15 7.61875C11.5642 7.61875 11.9 7.28296 11.9 6.86875C11.9 6.45454 11.5642 6.11875 11.15 6.11875C10.7358 6.11875 10.4 6.45454 10.4 6.86875C10.4 7.28296 10.7358 7.61875 11.15 7.61875Z"
+                                  fill="#3C3C3C"></path>
+                            </svg>
+
+                            <span class="comments-count">25 <span class="bb-comment-text">Bình luận</span></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
 <footer>
     <div class="container">
         <!--Bắt Đầu Nội Dung Giới Thiệu-->
@@ -130,7 +254,9 @@
         <!--Kết Thúc Nội Dung Liên Hệ-->
     </div>
 </footer>
-<script>
+<script type="text/javascript">
+
+    //slider
     let slideIndex = 0;
     showSlides();
 
@@ -143,16 +269,71 @@
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 3000); // Change image every 3 seconds
     }
 
-</script>
+    //chart
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer",
+            {
+                title: {
+                    text: "Doanh thu theo tháng"
+                },
+                data: [
+                    {
+                        type: "line",
+                        dataPoints: [
+                            {x: new Date(2022, 0, 1), y: 410},
+                            {x: new Date(2022, 1, 1), y: 414},
+                            {x: new Date(2022, 2, 1), y: 450},
+                            {x: new Date(2022, 3, 1), y: 400},
+                            {x: new Date(2022, 4, 1), y: 410},
+                            {x: new Date(2022, 5, 1), y: 400},
+                            {x: new Date(2022, 6, 1), y: 460},
+                            {x: new Date(2022, 7, 1), y: 460},
+                            {x: new Date(2022, 8, 1), y: 490},
+                            {x: new Date(2022, 9, 1), y: 510},
+                            {x: new Date(2022, 10, 1), y: 560},
+                            {x: new Date(2022, 11, 1), y: 580}
+                        ]
+                    }
+                ],
+                options: {}
+            });
 
+        chart.render();
+    }
+
+    //header footer
+    const theBody = document.querySelector('body');
+    const openNav = document.querySelector('.menu-bar button');
+    const closeNav = document.querySelector('.close-nav button');
+    const Navbar = document.querySelector('.navbar');
+
+    function bodyScroll() {
+        if (Navbar.classList.contains('show')) {
+            theBody.classList.add('hide-scroll');
+        } else if (theBody.classList.contains('hide-scroll')) {
+            theBody.classList.remove('hide-scroll');
+        }
+    }
+
+    function showHide() {
+        Navbar.classList.toggle('show');
+        bodyScroll();
+    }
+
+    openNav.onclick = showHide;
+    closeNav.onclick = showHide;
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
